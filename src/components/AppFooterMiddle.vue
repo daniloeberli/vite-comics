@@ -9,7 +9,7 @@ export default {
         <div class="footer-middle-container">
             <div class="middle-left">
                 <div>
-                    <div>
+                    <div class="comic-list">
                         <h2>DC comics</h2>
                         <ul>
                             <li><a href="#">Prova</a></li>
@@ -29,7 +29,7 @@ export default {
                         </ul>
                     </div>
                 </div>
-                <div>
+                <div class="dc-list">
                     <h2>DC</h2>
                     <ul>
                         <li><a href="#">Prova</a></li>
@@ -57,7 +57,7 @@ export default {
                 </div>
             </div>
             <div>
-                <h2>hey</h2>
+                
             </div>
         </div>
     </footer>
@@ -89,6 +89,14 @@ footer {
             color: #3a6586;
             text-decoration: none;
         }
+    }
+
+    .comic-list{
+        padding-bottom: 20px;
+    }
+
+    .dc-list{
+        padding: 0 40px;
     }
 }
 </style>

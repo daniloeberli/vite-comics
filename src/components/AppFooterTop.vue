@@ -46,6 +46,15 @@ footer{
             margin: 0 auto;
             display: flex;
         }
+
+        img{
+            width: 50px;
+        }
+
+        h3{
+            padding: 0 10px;
+            color: white;
+        }
     }
     
 }
