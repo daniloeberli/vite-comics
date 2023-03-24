@@ -1,41 +1,77 @@
 <script>
 export default {
+    
+    data() {
+        return {
+            list: [
+                {
+                    tag: "CHARACTERS",
+                    link: "#"
+                },
+                {
+                    tag: "COMICS",
+                    link: "#"
+                },
+                {
+                    tag: "MOVIES",
+                    link: "#"
+                },
+                {
+                    tag: "TV",
+                    link: "#"
+                },
+                {
+                    tag: "GAMES",
+                    link: "#"
+                },
+                {
+                    tag: "COLLECTIBLES",
+                    link: "#"
+                },
+                {
+                    tag: "VIDEOS",
+                    link: "#"
+                },
+                {
+                    tag: "FANS",
+                    link: "#"
+                },
+                {
+                    tag: "NEWS",
+                    link: "#"
+                },
+                {
+                    tag: "SHOP",
+                    link: "#"
+                }
+            ]
+        }
+    }
 
 }
 </script>
 
 <template>
-    <header>
+    <section>
         <div>
             <img src="../assets/dc-logo.png" alt="logo dc">
             <ul>
-                <li><a href="#">a</a></li>
-                <li><a href="#">a</a></li>
-                <li><a href="#">a</a></li>
-                <li><a href="#">a</a></li>
-                <li><a href="#">a</a></li>
-                <li><a href="#">a</a></li>
-                <li><a href="#">a</a></li>
-                <li><a href="#">a</a></li>
-                <li><a href="#">a</a></li>
-                <li><a href="#">a</a></li>
+                <li v-for="item of list">
+                    <a href="item.link">{{ item.tag }}</a>
+                </li>
             </ul>
         </div>
-    </header>
+    </section>
 </template>
 
 <style lang="scss" scoped>
-header {
-    
-}
-
 div {
     margin: 0 auto;
     width: 80%;
     display: flex;
     justify-content: space-between;
 
-    img{
+    img {
         padding: 20px 0;
     }
 
@@ -48,18 +84,21 @@ div {
             height: 100%;
             display: flex;
             align-items: center;
-            &:hover{
-                    border-bottom: 5px solid #0282f9;
+
+            &:hover {
+                border-bottom: 5px solid #0282f9;
+                a{
+                    color: #0282f9;
                 }
+            }
 
             a {
                 display: inline-block;
                 padding: 0 15px;
                 text-decoration: none;
                 color: #464646;
-                &:hover{
-                    color: #0282f9;
-                }
+
+                
             }
         }
     }

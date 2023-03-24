@@ -5,7 +5,7 @@
 </script>
 
 <template>
-    <footer>
+    <section>
         <div class="bottom-container">
             <div class="sign-btn">
                 <h3>Sign up now</h3>
@@ -19,12 +19,12 @@
                 <img src="../assets/footer-periscope.png" alt="">
             </div>
         </div>
-    </footer>
+    </section>
 </template>
 
 <style lang="scss" scoped>
 
-footer{
+section{
     height: 110px;
     background-color: #303030;
     .bottom-container{
