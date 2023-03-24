@@ -8,10 +8,10 @@
     <section>
         <div class="bottom-container">
             <div class="sign-btn">
-                <h3>Sign up now</h3>
+                <h3>SIGN UP NOW</h3>
             </div>
             <div class="follow">
-                <h3>follow us</h3>
+                <h3>FOLLOW US</h3>
                 <img src="../assets/footer-facebook.png" alt="">
                 <img src="../assets/footer-twitter.png" alt="">
                 <img src="../assets/footer-youtube.png" alt="">
@@ -25,7 +25,7 @@
 <style lang="scss" scoped>
 
 section{
-    height: 110px;
+    padding: 30px 0;
     background-color: #303030;
     .bottom-container{
         width: 80%;
@@ -42,6 +42,7 @@ section{
             h3{
                 padding: 10px;
                 color: white;
+                font-size: 14px;
             }
         }
         .follow{
@@ -51,6 +52,7 @@ section{
             h3{
                 padding-right: 10px;
                 color: #0282f9;
+                font-size: 16px;
                 
             }
 

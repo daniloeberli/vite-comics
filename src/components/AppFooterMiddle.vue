@@ -121,7 +121,7 @@ export default {
             <div class="middle-left">
                 <div>
                     <div class="comic-list">
-                        <h2>DC comics</h2>
+                        <h2>DC COMICS</h2>
                         <ul>
                             <li v-for="item in DcComicsList">
                                 <a :href="item.link">{{ item.tag }}</a>
@@ -129,7 +129,7 @@ export default {
                         </ul>
                     </div>
                     <div>
-                        <h2>shop</h2>
+                        <h2>SHOP</h2>
                         <ul>
                             <li v-for="item in ShopList">
                                 <a :href="item.link">{{ item.tag }}</a>
@@ -164,7 +164,9 @@ export default {
 <style lang="scss" scoped>
 section {
     height: 300px;
-    background-image: url(../assets/footer-bg.jpg);
+    background-image: url(../assets/footer-bg.jpg),
+                      url(../assets/dc-logo-bg.png);
+                     
 
     .footer-middle-container {
         width: 80%;
@@ -174,19 +176,23 @@ section {
 
         .middle-left {
             display: flex;
+            padding-top: 30px;
         }
     }
 
     h2 {
         color: white;
+        padding-bottom: 10px;
+        font-size: 16px;
     }
 
     ul {
         list-style: none;
 
         a {
-            color: #3a6586;
+            color: darken(#698888,10%);
             text-decoration: none;
+            font-size: 12px;
         }
     }
 
@@ -199,3 +205,9 @@ section {
     }
 }
 </style>
+
+background-image: url(logo), url(bg);
+    background-position: % %,  % %;
+    background-size: %, %;
+    height: ?;
+    background-repeat: no-repeat;
