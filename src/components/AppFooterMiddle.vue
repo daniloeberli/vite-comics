@@ -164,10 +164,8 @@ export default {
 <style lang="scss" scoped>
 section {
     height: 300px;
-    background-image: url(../assets/footer-bg.jpg),
-                      url(../assets/dc-logo-bg.png);
-                     
-
+    background: url(../assets/dc-logo-bg.png) center right 15% no-repeat , url(../assets/footer-bg.jpg) left top no-repeat ;
+    background-size: auto, cover; 
     .footer-middle-container {
         width: 80%;
         margin: 0 auto;
@@ -190,7 +188,7 @@ section {
         list-style: none;
 
         a {
-            color: darken(#698888,10%);
+            color: lighten(#698888,10%);
             text-decoration: none;
             font-size: 12px;
         }
