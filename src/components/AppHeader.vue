@@ -73,6 +73,7 @@ div {
 
     img {
         padding: 20px 0;
+        max-width: 70px;
     }
 
     ul {
@@ -97,7 +98,8 @@ div {
                 padding: 0 15px;
                 text-decoration: none;
                 color: #464646;
-
+                font-size: 12px;
+                font-weight: 800;
                 
             }
         }
