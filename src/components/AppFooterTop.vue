@@ -71,13 +71,14 @@ section {
 
             li{
                 width: calc(100% / 5);
-                padding: 40px 10px;
+                padding: 40px 20px;
 
                 a{
                     display: flex;
                     align-items: center;
                     text-decoration: none;
                     color: white;
+                    font-size: 13px;
 
                     .img{
                     width: 50px;
